@@ -1,0 +1,17 @@
+<html>
+  <head><title><%= title %></title></head>
+  <body>
+    Bonjour <%= name%> !
+    <% if (authentificated) { %>
+      <h1>C'est vrai !</h1>
+    <% } else { %>
+      <h1>C'est faux !</h1>
+    <% } %>
+    <ul>
+      <% products.forEach(p => { %>
+        <h5><%= p.title %></h5>
+        <p><%= p.product %></p>
+      <% }); %>
+    </ul>
+  </body>
+</html>

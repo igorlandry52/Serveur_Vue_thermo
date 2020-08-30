@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Document
+  body
+    h1 Hello #{ name }
+    p= name
+    if authentificated
+      p je suis connecté.
+    else
+      p je ne suis pas connecté.
+    case friends
+      when 0
+        span you don't have friend.
+      when 0
+        span you don't have friend.
+      default
+        span you have #{ friends } friends.
+    each p in products
+      .container_product
+        h5= p.title
+        p= p.product
